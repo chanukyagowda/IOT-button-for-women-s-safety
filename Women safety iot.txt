@@ -1,3 +1,5 @@
+//Project Done by Chanukya N
+//YouTube:https://youtube.com/c/chanukyaGowda
 #define BLYNK_PRINT Serial
 #include <SPI.h>
 #include <ESP8266WiFi.h>
@@ -14,7 +16,6 @@ char auth[] = "-----------";
 // Set password to "" for open networks.
 char ssid[] = "--------";
 char pass[] = "--------";
-int a;
 
 String latitude;
 String longitude;
@@ -89,8 +90,6 @@ void setup()
 
   // Setting the button
   pinMode(2, INPUT_PULLUP);
-  // Attach pin 2 interrupt to our handler
- // attachInterrupt(digitalPinToInterrupt(2), emailOnButtonPress, CHANGE);
 }
 
 void loop()
